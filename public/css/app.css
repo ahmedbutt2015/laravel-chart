@@ -1,0 +1,94 @@
+body {
+    font-family: Raleway, sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    background-image: url("/img/admin.jpg");
+    background-size: cover;
+}
+
+.containerc {
+    width: 80px;
+    height: 100px;
+    margin: 100px auto;
+    margin-top: calc(100vh / 2 - 50px);
+}
+
+.blockc {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: #FFF;
+}
+
+.blockc:nth-child(4n+1) {
+    animation: wave 2s ease .0s infinite;
+}
+
+.blockc:nth-child(4n+2) {
+    animation: wave 2s ease .2s infinite;
+}
+
+.blockc:nth-child(4n+3) {
+    animation: wave 2s ease .4s infinite;
+}
+
+.blockc:nth-child(4n+4) {
+    animation: wave 2s ease .6s infinite;
+    margin-right: 0;
+}
+
+@keyframes wave {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    50% {
+        top: 30px;
+        opacity: .2;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #000;
+    font-weight: 600;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000;
+    font-weight: 600;
+}
+
+:-ms-input-placeholder { /* Microsoft Edge */
+    color: #000;
+    font-weight: 600;
+}
+
+input, button {
+    color: #000;
+    font-weight: 900;
+}
+
+body {
+    padding: 10px;
+
+}
